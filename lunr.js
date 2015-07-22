@@ -1643,7 +1643,6 @@ lunr.stopWordFilter.stopWords.elements = [
   "to",
   "too",
   "twas",
-  "us",
   "wants",
   "was",
   "we",
