@@ -180,9 +180,8 @@ lunr.tokenizer = function (obj) {
   if (!arguments.length || obj == null || obj == undefined) return []
   if (Array.isArray(obj)) return obj.map(function (t) { return t.toLowerCase() })
 
-  return obj.toString().trim().toLowerCase().split(/[\s\-]+/)
+  return obj.toString().trim().toLowerCase().split(/[\s]+/)
 }
-
 /*!
  * lunr.Pipeline
  * Copyright (C) 2015 Oliver Nightingale
@@ -1096,7 +1095,7 @@ lunr.Index.prototype.search = function (query) {
         // to the token.
         if (key !== token) {
           var diff = Math.max(3, key.length - token.length)
-          similarityBoost = 1 / Math.log(diff)
+          similarityBoost = Math.pow(1 / Math.log(diff), 10)
         }
 
         // calculate the query tf-idf score for this token
