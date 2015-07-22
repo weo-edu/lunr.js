@@ -63,6 +63,6 @@ example: lunr.min.js
 	${NODE} example/index_builder.js
 
 node_modules: package.json
-	${NPM} -s install
+	@npm install
 
 .PHONY: test clean docs reset example
