@@ -1,10 +1,8 @@
-# Lunr.js
+# Weo Lunr.js
 
-[![Join the chat at https://gitter.im/olivernn/lunr.js](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/olivernn/lunr.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[ ![Codeship Status for weo-edu/lunr.js](https://img.shields.io/codeship/aeacea50-12e0-0133-8d6f-7a6c580e3e24/master.svg)](https://codeship.com/projects/92656)
 
-[![Build Status](https://travis-ci.org/olivernn/lunr.js.png?branch=master)](https://travis-ci.org/olivernn/lunr.js)
-
-A bit like Solr, but much smaller and not as bright.
+A fork of lunr that doesn't tokenize hypenated words and emphasizes exact matches.
 
 ## Example
 
